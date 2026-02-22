@@ -1,0 +1,82 @@
+/* Temel Sıfırlamalar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hareketli Gradient Arka Plan */
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1a2a6c);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Cam Efektli Ana Kart */
+.glass-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 60px 80px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    transition: transform 0.3s ease;
+}
+
+.glass-container:hover {
+    transform: translateY(-5px);
+}
+
+.greeting {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+/* İsmin parladığı kısım */
+.highlight {
+    font-weight: 600;
+    color: #00f2fe;
+    text-shadow: 0 0 15px rgba(0, 242, 254, 0.6);
+}
+
+.welcome-text {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+/* Dijital Saat Tasarımı */
+.clock {
+    font-family: 'Share Tech Mono', monospace; /* Dijital saat fontu */
+    font-size: 4.5rem;
+    color: #4facfe;
+    text-shadow: 0 0 20px rgba(79, 172, 254, 0.6);
+    margin: 30px 0;
+    letter-spacing: 2px;
+}
+
+.footer-text {
+    margin-top: 30px;
+    font-size: 1rem;
+    color: #94a3b8;
+    line-height: 1.6;
+}
+
+.footer-text strong {
+    color: #f8fafc;
+}
